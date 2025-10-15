@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Hostal Tucán</title>
+    <link rel="icon" type="image/x-icon" href="../../resources/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/styles.css" rel="stylesheet">
+    <style>
+        .card-img {
+            width: 100%;  /* Asegura que la imagen ocupe todo el ancho del contenedor */
+            height: 200px; /* Establece una altura fija para todas las imágenes */
+            object-fit: cover; /* Mantiene la relación de aspecto de la imagen mientras la recorta */
+            border-radius: 0.25rem; /* Redondea ligeramente las esquinas de la imagen (opcional) */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="../../index.html">
+            <img src="../../resources/img/logo.png" alt="Hostal Tucan" style="height: 40px; margin-right: 10px;">
+        Hostal Tucán</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="./actividades.html" class="nav-link">Actividades</a></li>
+                    <li class="nav-item"><a href="./galeria.html" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="./testimonios.html" class="nav-link">Testimonios</a></li>
+                    <li class="nav-item"><a href="./FAQs.html" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Galería -->
+    <section id="galeria" class="container mt-5">
+        <h2 class="text-center">Galería de Imágenes</h2>
+        <div class="row mt-4">
+            <!-- Imagen 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/beach-sun.jpg" class="card-img" alt="Playa Soleada">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Playa Soleada</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/sunset.jpg" class="card-img" alt="Atardecer en la playa">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Atardecer en la Playa</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/food.jpg" class="card-img" alt="Plato Gourmet">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Plato Gourmet</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/puddle.jpg" class="card-img" alt="Charcos">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Charcos</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/beach.jpg" class="card-img" alt="Playa de Arena Fina">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Playa de Arena Fina</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/nicho.jpg" class="card-img" alt="Nicho">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Nicho</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/rock and sea.jpg" class="card-img" alt="Marea">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Marea</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/palms.jpg" class="card-img" alt="Palmeras">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Palmeras</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../../resources/img/comedor.jpg" class="card-img" alt="Comedor">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Comedor</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center text-lg-start mt-5">
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </section>
+                <!-- Section: Social media -->
+    
+                <!-- Section: Links -->
+                <section class="">
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Hostal Tucán</h5>
+                            <p>
+                                Ubicado en la hermosa Isla Punta San Pedro, en el Pacífico colombiano, ofrecemos una experiencia de relajación, aventura y naturaleza que no encontrarás en ningún otro lugar. 
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+    
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Enlaces útiles</h5>
+                            <ul class="list-unstyled mb-0">
+                            <li><a href="./contacto.html" class="text-white">Contacto</a></li>
+                            <li><a href="./actividades.html" class="text-white">Actividades</a></li>
+                            <li><a href="./galeria.html" class="text-white">Galería</a></li>
+                            <li><a href="./FAQs.html" class="text-white">FAQs</a></li>
+                            <li><a href="./testimonios.html" class="text-white">Testimonios</a></li>
+                            </ul>
+                        </div>
+                        <!-- Grid column -->
+    
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Contáctanos</h5>
+                            <p><i class="bi bi-geo-alt-fill"></i> Isla Punta San Pedro, Pacífico colombiano</p>
+                            <p><i class="bi bi-envelope-fill"></i> info@hostaltucan.com</p>
+                            <p><i class="bi bi-phone-fill"></i> +57 123 456 7890</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                </section>
+                <!-- Section: Links -->
+            </div>
+    
+            <!-- Copyright -->
+            <div class="text-center p-3 bg-secondary">
+                © 2025 Hostal Tucán | Todos los derechos reservados.
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

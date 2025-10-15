@@ -1,0 +1,205 @@
+.square-container {
+  max-width: 800px;  /* Ancho máximo del cuadrado */
+  max-height: 800px; /* Alto máximo del cuadrado */
+  width: 100%;       /* Se ajusta al 100% del contenedor padre */
+  height: 0;
+  padding-bottom: 100%; /* Esto crea un cuadrado basado en el ancho */
+  margin: 0 auto;     /* Centrar el contenedor en la página */
+}
+
+.bg-transparent-orange {
+  background: rgba(255, 165, 0, 0.7); /* Color naranja con 70% de opacidad */
+  background: linear-gradient(to right, rgba(255, 165, 0, 0.7), rgba(255, 165, 0, 0.5));
+}
+
+.shadow-custom {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-custom {
+  border-radius: 20px;
+}
+
+/* Si decides usar textura */
+.bg-textured {
+  background-image: url('./path/to/your/texture.png'); /* Añade la ruta de tu textura */
+  background-size: cover;
+}
+
+.welcome-text {
+  color: black; /* Color negro para el texto */
+  font-size: 2.5rem; /* Aumentar tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.subtext {
+  color: black; /* Color negro para el texto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra del texto reducida */
+}
+
+
+
+.video-background {
+  position: absolute; /* Posiciona el div de fondo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Ocupa todo el contenedor */
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+  z-index: -1; /* Coloca el fondo detrás del carrusel */
+  pointer-events: none; /* Permite interacciones con el carrusel y videos */
+}
+
+.container {
+  position: relative; /* Necesario para el posicionamiento absoluto del fondo */
+}
+
+#videoCarousel {
+  max-width: 800px;  /* Ancho máximo del cuadrado */
+  max-height: 450px; /* Alto máximo del carrusel */
+  width: 100%;       /* Se ajusta al 100% del contenedor padre */
+  height: auto;      /* Ajustar altura automáticamente según contenido */
+  margin: 0 auto;    /* Centrar el contenedor en la página */
+  position: relative; /* Para que funcione correctamente con el fondo gris */
+}
+
+.background-overlay {
+  position: absolute; /* Posiciona el div de fondo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Ocupa todo el contenedor */
+  background-color: rgba(128, 128, 128, 0.5); /* Fondo gris con opacidad */
+  z-index: -1; /* Coloca el fondo detrás del carrusel */
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  filter: blur(15px) brightness(0.5); /* Efecto difuminado y oscurecido */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sección de Información de Contacto */
+#info-contacto {
+  padding: 50px 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#info-contacto h2 {
+  color: #00796b;
+  font-size: 2.5rem;
+}
+
+#info-contacto h4 {
+  margin-top: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+#info-contacto p {
+  color: #555;
+}
+
+#info-contacto a {
+  color: #00796b;
+  text-decoration: none;
+}
+
+#info-contacto a:hover {
+  text-decoration: underline;
+}
+
+#contacto-form .form-control {
+  border-radius: 5px;
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+#contacto-form .btn-primary {
+  background-color: #00796b;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#contacto-form .btn-primary:hover {
+  background-color: #004d40;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  #info-contacto {
+      padding: 20px;
+  }
+
+  #info-contacto h2 {
+      font-size: 2rem;
+  }
+}
+
+/* Sección de Equipo de Trabajo */
+#equipo {
+  padding: 50px 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#equipo h2 {
+  color: #00796b;
+  font-size: 2.5rem;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-title {
+  color: #00796b;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  color: #555;
+}
+
+.card .btn-primary {
+  background-color: #00796b;
+  border: none;
+}
+
+.card .btn-primary:hover {
+  background-color: #004d40;
+}
